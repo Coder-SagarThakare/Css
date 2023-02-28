@@ -1,0 +1,54 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container1,.container2,.container3,.container4,.container5,.container6,.container7,.container8,.container9{
+    margin: 1%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(242, 0, 255);
+    transform: translate(500px,80px);
+    border: 1px solid black;
+}
+/* rotate box in --- degree */
+.container2{
+    background-color: rgb(0, 81, 255);
+
+    transform: rotate(50deg);
+}
+.container3{
+    background-color: blue;
+    transform: rotate(-40deg)
+}
+/* The following example increases the <div> element to be two times of its original width, and three times of its original height: */
+.container4 {
+
+    transform: scale(5,1)
+
+}
+.container5{
+    /* background-color: black; */
+    /* color: white; */
+    transform: scale(0.5, 0.5);
+}
+.container6 {
+    transform: scaleX(7);           /* width increase in +ve value */
+    
+    /* transform: scaleX(0.3); */     /* width decrease in -ve value */
+
+}
+.container7{
+    transform: scaleY(2);
+    /* transform: scaleY(0.3); */
+}
+.container8{
+    /* transform: skewX(20deg); */
+    transform: skewY(20deg);
+    transform: skew(50deg);
+}
+.container9{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);    
+}
